@@ -1,11 +1,10 @@
 
-
 function MainHeader() {
     return (
         <header>
             <nav className="header-nav">
                 <figure className="logo-nav">
-                    <img src="./dc-logo.png" alt="logo" />
+                    <img src="/dc-logo.png" alt="logo" />
                 </figure>
                 <ul className="list-nav">
                     <li><a className="link-nav" href="#">Characters</a></li>
