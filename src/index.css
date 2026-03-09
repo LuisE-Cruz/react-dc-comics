@@ -66,6 +66,52 @@ a {
 .container-main-first {
   width: 70%;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.badge {
+  color: white;
+  background-color: #0282F9;
+  position: absolute;
+  top: -25px;
+  padding: 0.5rem 1.5rem;
+}
+
+.card {
+  flex-basis: calc((100% - 5rem) / 6);
+  margin-top: 3rem;
+}
+
+.card figure {
+  aspect-ratio: 1/1;
+  margin-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.card-title {
+  color: white;
+}
+
+.main-first .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-main-first {
+  color: white;
+  background-color: #0282F9;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .link-main-first {
