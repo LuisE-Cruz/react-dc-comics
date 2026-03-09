@@ -6,9 +6,8 @@ function MainContentFirst() {
 
         return comics.map((comic) => (
             <a key={comic.id} className="card" href="#">
-                <figure>
-                    <img src={comic.thumb} alt={comic.title} />
-                </figure>
+
+                <img src={comic.thumb} alt={comic.title} />
                 <div className="card-title">
                     {comic.series.toLocaleUpperCase()}
                 </div>

@@ -1,4 +1,48 @@
 function FooterStart() {
+
+    const footerLinksComics = [
+        { id: 1, label: "Characters", href: "#" },
+        { id: 2, label: "Comics", href: "#" },
+        { id: 3, label: "Movies", href: "#" },
+        { id: 4, label: "TV", href: "#" },
+        { id: 5, label: "Games", href: "#" },
+        { id: 6, label: "Videos", href: "#" },
+        { id: 7, label: "News", href: "#" }
+    ];
+
+    const footerLinksShop = [
+        { id: 1, label: "Shop DC", href: "#" },
+        { id: 2, label: "Shop DC Collectibles", href: "#" }
+    ];
+
+    const footerLinksDC = [
+        { id: 1, label: "Terms Of Use", href: "#" },
+        { id: 2, label: "Privacy policy (New)", href: "#" },
+        { id: 3, label: "Ad Choices", href: "#" },
+        { id: 4, label: "Advertising", href: "#" },
+        { id: 5, label: "Jobs", href: "#" },
+        { id: 6, label: "Subscriptions", href: "#" },
+        { id: 7, label: "Talent Workshops", href: "#" },
+        { id: 8, label: "CPSC Certificates", href: "#" },
+        { id: 9, label: "Rating", href: "#" },
+        { id: 10, label: "Shop Help", href: "#" },
+        { id: 11, label: "Contact Us", href: "#" }
+    ];
+
+    const footerLinksSities = [
+        { id: 1, label: "DC", href: "#" },
+        { id: 2, label: "MAD Magazine", href: "#" },
+        { id: 3, label: "DC Kids", href: "#" },
+        { id: 4, label: "DC Universe", href: "#" },
+        { id: 5, label: "DC Power Visa", href: "#" }
+    ];
+
+    function NavBarLinkRender(links) {
+        return links.map((link) => (
+            <li key={link.id}><a href={link.href}>{link.label}</a></li>
+        ))
+    }
+
     return (
         <section className="bg-footer-start">
             <div className="container-footer-start">
@@ -6,44 +50,23 @@ function FooterStart() {
                     <div className="list-footer">
                         <h2>DC COMICS</h2>
                         <ul>
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">News</a></li>
+                            {NavBarLinkRender(footerLinksComics)}
                         </ul>
                         <h2>SHOP</h2>
                         <ul>
-                            <li><a href="#">Shop DC</a></li>
-                            <li><a href="#">Shop DC Collectibles</a></li>
+                            {NavBarLinkRender(footerLinksShop)}
                         </ul>
                     </div>
                     <div className="list-footer">
                         <h2>DC</h2>
                         <ul>
-                            <li><a href="#">Terms Of Use</a></li>
-                            <li><a href="#">Privacy policy (New)</a></li>
-                            <li><a href="#">Ad Choices</a></li>
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Subscriptions</a></li>
-                            <li><a href="#">Talent Workshops</a></li>
-                            <li><a href="#">CPSC Certificates</a></li>
-                            <li><a href="#">Rating</a></li>
-                            <li><a href="#">Shop Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            {NavBarLinkRender(footerLinksDC)}
                         </ul>
                     </div>
                     <div className="list-footer">
                         <h2>SITIES</h2>
                         <ul>
-                            <li><a href="#">DC</a></li>
-                            <li><a href="#">MAD Magazine</a></li>
-                            <li><a href="#">DC Kids</a></li>
-                            <li><a href="#">DC Universe</a></li>
-                            <li><a href="#">DC Power Visa</a></li>
+                            {NavBarLinkRender(footerLinksSities)}
                         </ul>
                     </div>
                 </div>
