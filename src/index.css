@@ -49,3 +49,22 @@ a {
 .logo-nav img {
   width: 75%;
 }
+
+/* MainContent */
+
+.main-first {
+  background-color: black;
+}
+
+.container-main-first {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.link-main-first {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  padding: 3rem 0;
+  font-size: x-large;
+}

@@ -1,7 +1,11 @@
 function MainContentFirst() {
     return (
-        <section>
-
+        <section className="main-first">
+            <div className="container-main-first">
+                <a className="link-main-first" href="#">
+                    {"--> Content goes here <--"}
+                </a>
+            </div>
         </section>
     )
 }
