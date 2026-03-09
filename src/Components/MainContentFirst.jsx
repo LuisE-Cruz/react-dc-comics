@@ -1,3 +1,5 @@
+import comics from "../assets/img/comics"
+
 function MainContentFirst() {
     return (
         <section className="main-first">

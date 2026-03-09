@@ -50,6 +50,13 @@ a {
   width: 75%;
 }
 
+.jumbotron {
+  background-image: url(./assets/img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
 /* MainContent */
 
 .main-first {
