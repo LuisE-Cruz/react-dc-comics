@@ -3,3 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* General */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.list-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 60%;
+}
+
+.link-nav {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.link-nav:hover {
+  border-bottom: 5px solid #0282F9;
+  color: #0282F9;
+}
+
+.logo-nav img {
+  width: 75%;
+}
