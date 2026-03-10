@@ -1,26 +1,23 @@
 import comics from "../assets/img/comics"
+import PropComic from "./PropComic"
 
 function MainContentFirst() {
 
-    function RenderCard() {
-
-        return comics.map((comic) => (
-            <a key={comic.id} className="card" href="#">
-
-                <img src={comic.thumb} alt={comic.title} />
-                <div className="card-title">
-                    {comic.series.toLocaleUpperCase()}
-                </div>
-            </a>
+    function ComicCardRender() {
+        return comics.map((gennaro) => (
+            <PropComic
+                key={gennaro.id}
+                comic={gennaro}
+            />
         ))
     }
+
 
     return (
         <section className="main-first">
             <div className="container-main-first">
                 <div className="badge">Current Series</div>
-                {RenderCard(comics)}
-
+                {ComicCardRender()}
             </div>
 
             <div className="button-container">
